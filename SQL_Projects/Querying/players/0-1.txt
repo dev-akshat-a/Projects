@@ -1,0 +1,7 @@
+-- database: d:\SQL\player\players.db
+
+-- Use the ▷ button in the top right corner to run the entire file.
+
+-- write a SQL query to find the hometown (including city, state, and country) of Jackie Robinson.
+
+SELECT "birth_city","birth_state","birth_country","first_name","last_name" FROM players where "first_name"='Jackie' AND "last_name" = 'Robinson'; 
