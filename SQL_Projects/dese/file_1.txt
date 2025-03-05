@@ -1,0 +1,6 @@
+-- database: c:\Users\Admin\Desktop\SQL\dese.db
+
+
+-- write a SQL query to find the names and cities of all public schools in Massachusetts.
+
+SELECT "name","city" FROM districts WHERE "type" LIKE 'Public%';

@@ -1,0 +1,5 @@
+-- database: c:\Users\Admin\Desktop\SQL\dese.db
+
+-- write a SQL query to find the average per-pupil expenditure. Name the column “Average District Per-Pupil Expendit
+
+SELECT avg("per_pupil_expenditure") AS "Average District Per-Pupil Expendit"  FROM "expenditures";

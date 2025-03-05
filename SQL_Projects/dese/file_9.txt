@@ -1,0 +1,4 @@
+-- database: c:\Users\Admin\Desktop\SQL\dese.db
+--  write a SQL query to find the name (or names) of the school district(s) with the single least number of pupils. Report only the name(s).
+
+SELECT MIN("pupils"),"name" FROM "expenditures"  JOIN "schools" ON "expenditures"."id" = "schools"."id";

@@ -1,0 +1,11 @@
+-- database: c:\Users\Admin\Desktop\SQL\dese.db
+--  write a SQL query to display the names of schools, their per-pupil expenditure, and their graduation rate. Sort the schools from greatest per-pupil expenditure to least. If two schools have the same per-pupil expenditure, sort by school name.
+
+SELECT "per_pupil_expenditure","name" FROM "expenditures"  JOIN "schools" ON "expenditures"."district_id" = "schools"."district_id"  WHERE "per_pupil_expenditure" IN (
+    SELECT "per_pupil_expenditure"
+    FROM "schools"
+    GROUP BY "per_pupil_expenditure"
+    HAVING COUNT(*) > 1
+) ORDER BY "name", "per_pupil_expenditure" DESC ;
+
+

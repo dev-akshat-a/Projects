@@ -1,0 +1,7 @@
+-- database: c:\Users\Admin\Desktop\SQL\dese.db
+
+-- write a SQL query to display the names of all school districts and the number of pupils enrolled in each.
+
+
+SELECT "pupils","name" FROM "expenditures"  JOIN "schools" ON "expenditures"."id" = "schools"."id";
+

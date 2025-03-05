@@ -1,0 +1,7 @@
+-- database: c:\Users\Admin\Desktop\SQL\dese.db
+
+-- write a SQL query to find public school districts with above-average per-pupil expenditures and an above-average percentage of teachers rated “exemplary”. Your query should return the districts’ names, along with their per-pupil expenditures and percentage of teachers rated exemplary.  Sort the results first by the percentage of teachers rated exemplary (high to low), then by the per-pupil expenditure (high to low).
+
+
+SELECT "name","per_pupil_expenditure","evaluated" FROM "schools"  JOIN "expenditures"ON"expenditures"."district_id" ="schools"."district_id" JOIN "staff_evaluations" ON "staff_evaluations"."district_id" = "schools"."district_id" 
+WHERE "type" LIKE 'P%' AND "per_pupil_expenditure" > '19528.990025252526' AND "exemplary" IS NOT NULL AND "evaluated" > 90.17183908045976  ORDER BY "exemplary" DESC ,"per_pupil_expenditure" DESC ;
