@@ -1,0 +1,3 @@
+-- database: d:\SQL\views\views.db
+-- write a SQL query to find the average entropy of prints by Hiroshige, rounded to two decimal places. Call the resulting column “Hiroshige Average Entropy”.
+SELECT round(avg("entropy"),2) AS "Hiroshige Average Entropy" ,"artist" FROM views WHERE "artist"='Hiroshige';

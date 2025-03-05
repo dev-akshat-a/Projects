@@ -1,0 +1,6 @@
+-- database: d:\SQL\views\views.db
+-- write a SQL query to answer a question of your choice about the prints. The query should:
+-- Make use of AS to rename a column
+-- Involve at least one condition, using WHERE
+-- Sort by at least one column, using ORDER BY
+SELECT "print_number","english_title" FROM views WHERE "print_number" >30 ORDER BY "print_number" DESC ;
