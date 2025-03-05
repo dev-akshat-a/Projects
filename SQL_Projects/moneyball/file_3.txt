@@ -1,0 +1,5 @@
+-- database: d:\SQL_full\PS-1\MONEYBALL\moneyball.db
+
+--  In 3.sql, write a SQL query to find Ken Griffey Jr.’s home run history.
+-- Sort by year in descending order.
+-- Your query should return a table with two columns, one for year and one for home runs.

@@ -1,0 +1,9 @@
+-- database: d:\SQL_full\PS-1\MONEYBALL\moneyball.db
+-- write a SQL query to find the average player salary by year.
+-- Sort by year in descending order.
+-- Round the salary to two decimal places and call the column “average salary”.
+-- Your query should return a table with two columns, one for year and one for average salary.
+
+SELECT round(avg(salary),2) as "avg_salary",year FROM salaries GROUP BY year;
+
+SELECT * from players  where first_name is not null order by first_name desc ;

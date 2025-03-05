@@ -1,0 +1,6 @@
+-- database: d:\SQL_full\PS-1\MONEYBALL\moneyball.db
+
+-- write a SQL query to find Cal Ripken Jr.’s salary history.
+SELECT id FROM players WHERE first_name like "Cal" and last_name like "Ripken";
+
+select year,salary FROM salaries WHERE player_id=(SELECT id FROM players WHERE first_name like "Cal" and last_name like "Ripken");
